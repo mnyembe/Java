@@ -17,15 +17,16 @@ public class Methods {
         System.out.println(playerName + " managed to get into position " + highScorePosition );
     }
     private static int calculateHighScorePosition(int playerScore) {
+        int position = 4;
         if(playerScore >= 1000) {
-            return 1;
+             position = 4;
         }else
         if (playerScore >= 500) {
-            return 2;
+            position = 2;
         }
         if (playerScore >= 100) {
-            return 3;
+            position = 3;
         }
-        return 4;
+        return position;
     }
 }
